@@ -1,0 +1,16 @@
+Stoican Elena-Andreea
+322CB
+
+Tema 4 PC
+
+Pentru rezolvarea temei, mesajul care se trimite la server, a fost construit folosind structurile 
+definite in fisierul dns_message.h.
+Din raspunsul de la server se preiau informatiile in functie de tipul interogarii si se scriu in 
+fisierul logfile.
+Pentru preluarea domeniului din raspunsul serverului a fost construita functia getDomain care intoarce
+offsetul unde se termina numele.
+
+Daca dupa preluarea unui ip, sendto da eroare sau ip-ul este incorect sau se asteapta mai mult de 3 secunde 
+primirea raspunsului de la server, se trece la urmatorul ip.
+
+
